@@ -1,5 +1,10 @@
-"use client"
-import {useState, useEffect} from "react"
+"use client";
+import { useState, useEffect } from "react";
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import Logo from "@/assets/svg/Logo.svg";
+import Image from "next/image";
 import {
   Navbar,
   Collapse,
@@ -8,81 +13,78 @@ import {
   IconButton,
   List,
   ListItem,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import CustomButton from "@/components/button/CustomButton";
 
- 
-
- 
-
- 
 function NavList() {
+  // All Navbar list
+  const items = [
+    { text: "home", id: 1 },
+    { text: "about", id: 2 },
+    { text: "contact", id: 3 },
+    { text: "services", id: 4 },
+    { text: "gallery", id: 5 },
+    { text: "pricing", id: 6},
+  ];
+
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
-      </Typography>
-    
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
-        </ListItem>
-      </Typography>
+      {items.map((data) => {
+        // dispalying the nav list
+        return (
+          <Typography
+            as="a"
+            href={data.text === "home" ? "/" : `/${data.text} `}
+            variant="small"
+            color="blue-gray"
+            className="font-medium flex"
+            key={data.id}  >
+            <ListItem
+              className="flex items-center gap-2 py-2 pr-4"
+            
+            >
+              {data.text}
+            </ListItem>
+          </Typography>
+        );
+      })}
     </List>
   );
 }
- 
+
 export function NavbarWithMegaMenu() {
   const [openNav, setOpenNav] = useState(false);
- 
+  const contact = "Book Appointment";
   useEffect(() => {
+    // media query
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 768 && setOpenNav(false)
     );
   }, []);
- 
+
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-2">
+    <Navbar className="mx-auto rounded-none px-8 py-2 sticky top-0  z-[999] bg-white" fullWidth={true} blurred={false}>
       <div className="flex items-center justify-between text-blue-gray-900">
+    
         <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-          Material Tailwind
+              <Image src={Logo} alt="" width={120}/>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button variant="text" size="sm" color="blue-gray">
-            Log In
-          </Button>
-          <Button variant="gradient" size="sm">
-            Sign In
-          </Button>
+          <CustomButton Value={contact} />
         </div>
         <IconButton
           variant="text"
@@ -99,14 +101,7 @@ export function NavbarWithMegaMenu() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-            Log In
-          </Button>
-          <Button variant="gradient" size="sm" fullWidth>
-            Sign In
-          </Button>
-        </div>
+        <CustomButton Value={contact} />
       </Collapse>
     </Navbar>
   );
