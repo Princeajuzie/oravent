@@ -1,8 +1,9 @@
-
+import CustomButton from "../button/CustomButton"
 export default function GalleryComponent() {
+    const Text = "More"
   return (
     <div className="">
-      <div className="bg-white dark:bg-gray-800 h-full  py-6 sm:py-8 lg:py-12">
+      <div className="bg-white dark:bg-gray-800 h-full  py-6 sm:py-8 lg:py-12 px-5 lg:px-7 ">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
             <div className="flex items-center gap-12">
@@ -14,10 +15,8 @@ export default function GalleryComponent() {
                 </p>
             </div>
 
-            <a href="#"
-                className="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
-                More
-            </a>
+            <CustomButton  Value={Text} variant="outlined" className="px-4 py-2 md:px-8 md:py-3 md:text-base dark:bg-gray-700 dark:border-none transition duration-100"/>
+     
         </div>
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
@@ -35,8 +34,8 @@ export default function GalleryComponent() {
 
     
             <a href="#"
-                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80 object-cover">
+                <img src="https://c1.wallpaperflare.com/preview/277/531/704/decoration-invitation-elegant-celebrate.jpg" loading="lazy" alt="Photo by Magicle" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                 <div
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">

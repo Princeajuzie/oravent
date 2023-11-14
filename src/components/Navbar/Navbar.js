@@ -69,7 +69,7 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="mx-auto rounded-none px-8 py-2 sticky top-0  z-[999] bg-white" fullWidth={true} blurred={false}>
+    <Navbar className="mx-auto rounded-none px-8 lg:pr-14 lg:pl-8 py-2 sticky top-0  z-[999] bg-white" fullWidth={true} blurred={false}>
       <div className="flex items-center justify-between text-blue-gray-900">
     
         <Typography

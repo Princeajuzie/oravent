@@ -1,11 +1,20 @@
 "use client";
 import { Carousel } from "@material-tailwind/react";
 import CustomButton from "../button/CustomButton";
+import Event0 from "@/assets/images/event0.jpg";
+import Event001 from "@/assets/images/event001.jpg";
+import Event003 from "@/assets/images/event003.jpg";
+import Image from "next/image";
 export default function AllCarousel() {
+  const Data = [
+    {image : Event0, id: 1},
+    {image : Event001, id: 2},
+    {image : Event003, id: 3}
+  ]
   const Event = "Contact Us"
   return (
     <div className=" relative  " style={{ height: "calc(100vh - 9.625vh)" }}>
-      <div className="absolute z-30 top-0 bg-black/60 h-[inherit] w-full text-[white]  flex items-center px-10 lg:pl-10">
+      <div className="absolute z-30 top-0 bg-black/40 h-[inherit] w-full text-[white]  flex items-center px-10 lg:pl-12">
       <div class="text-left ltr:sm:text-left rtl:sm:text-right gap-8 w-fit ">
       <h2 class="text-2xl font-bold text-white sm:text-4xl md:text-5xl">
         Best Events Experience
@@ -34,21 +43,17 @@ export default function AllCarousel() {
         nextArrow={false}
         navigation={false}
       >
-        <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-          alt="image 1"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
+        {Data.map((item)=>{
+          return (
+            <Image
+            src={item.image}
+            alt="image 1"
+            className="h-full w-full object-cover"
+          key={item.id} />
+          )
+        })}
+  
+   
       </Carousel>
     </div>
   );

@@ -10,7 +10,7 @@ export default function PricingComponent() {
     const icon = <FaArrowRight />
     return (
       <div>
-          <div className="space-y-5 px-8 py-12">
+          <div className="space-y-5 px-8 lg:px-14 py-12">
           <div className="text-center mt-4 lg:mt-8">
           <div className="text-sm text-indigo-600 uppercase font-semibold tracking-wider">
             Pricing Plans
