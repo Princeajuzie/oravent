@@ -16,7 +16,7 @@ module.exports = withMT({
     },
   },
   rippleui : {
-    removeThemes :["dark", "light", "whateverTheme"]
+    removeThemes :["dark"]
   },
   plugins: [
     require('rippleui')
