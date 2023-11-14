@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@heroicons/react':
+    specifier: ^2.0.18
+    version: 2.0.18(react@18.2.0)
   '@material-tailwind/react':
     specifier: ^2.1.4
     version: 2.1.4(react-dom@18.2.0)(react@18.2.0)
+  heroicons:
+    specifier: ^2.0.18
+    version: 2.0.18
   next:
     specifier: 14.0.2
     version: 14.0.2(@babel/core@7.23.3)(react-dom@18.2.0)(react@18.2.0)
@@ -477,6 +483,14 @@ packages:
 
   /@floating-ui/utils@0.1.6:
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
+    dev: false
+
+  /@heroicons/react@2.0.18(react@18.2.0):
+    resolution: {integrity: sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -2722,6 +2736,10 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
+
+  /heroicons@2.0.18:
+    resolution: {integrity: sha512-3iaqznaz5GJ8Mox/eDfKHo7tYKuPiZV4vbg6pB6wjJhBa7ZKQlXT1KuUnsjkEiPy/ezyiqppOX6wUqYguMIq8w==}
+    dev: false
 
   /hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
