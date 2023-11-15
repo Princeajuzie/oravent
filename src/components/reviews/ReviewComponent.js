@@ -30,7 +30,7 @@ export default function ReviewComponent() {
   return (
     <div>
       
-<section className="bg-[#f2f2f7]">
+<section className="bg-[#f2f2f7] lg:bg-[#f2f2f7]">
 
   <div className="mx-auto w-full max-w-7xl px-8 py-16 md:px-10 md:py-24 lg:py-32">
 
