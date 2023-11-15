@@ -26,7 +26,7 @@ function NavList() {
   const items = [
     { text: "home", id: 1 },
     { text: "about", id: 2 },
-    { text: "contact", id: 3 },
+    { text: "Contact", id: "#Contact" },
     { text: "services", id: 4 },
     { text: "gallery", id: 5 },
     { text: "pricing", id: 6},
@@ -39,7 +39,7 @@ function NavList() {
         return (
           <Typography
             as="a"
-            href={data.text === "home" ? "/" : `/${data.text} `}
+            href={data.text === "home" ? "/" : `/${data.id} `}
             variant="small"
             color="blue-gray"
             className="font-medium flex"
