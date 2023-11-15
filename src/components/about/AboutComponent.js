@@ -18,7 +18,7 @@ export default function AboutComponent() {
                 </div>
             </div>
             <div className="mt-12 md:mt-0">
-                <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image" className="object-cover rounded-lg shadow-md" />
+                <img src="https://c1.wallpaperflare.com/preview/804/45/210/dinner-party-wedding-meal-party.jpg" alt="About Us Image" className="object-cover rounded-lg shadow-md" />
             </div>
         </div>
     </div>
