@@ -2,9 +2,10 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Logo from "@/assets/svg/Logo.svg";
 import Image from "next/image";
+
 import {
   Navbar,
   Collapse,
@@ -24,12 +25,12 @@ import CustomButton from "@/components/button/CustomButton";
 function NavList() {
   // All Navbar list
   const items = [
-    { text: "home", id: 1 },
-    { text: "about", id: 2 },
+    { text: "Home", id: "/" },
+    { text: "About", id: "about" },
     { text: "Contact", id: "#Contact" },
-    { text: "services", id: 4 },
-    { text: "gallery", id: 5 },
-    { text: "pricing", id: 6},
+    { text: "Services", id: "services" },
+    { text: "Gallery", id: "gallery" },
+    { text: "Pricing", id: "pricing" },
   ];
 
   return (
@@ -39,14 +40,14 @@ function NavList() {
         return (
           <Typography
             as="a"
-            href={data.text === "home" ? "/" : `/${data.id} `}
+            href={data.text === "Home" ? "/" : `/${data.id} `}
             variant="small"
             color="blue-gray"
             className="font-medium flex"
             key={data.id}  >
             <ListItem
               className="flex items-center gap-2 py-2 pr-4"
-            
+
             >
               {data.text}
             </ListItem>
@@ -58,6 +59,10 @@ function NavList() {
 }
 
 export function NavbarWithMegaMenu() {
+  const route = useRouter();
+  const click = () => {
+    route.push('/book')
+  }
   const [openNav, setOpenNav] = useState(false);
   const contact = "Book Appointment";
   useEffect(() => {
@@ -71,20 +76,22 @@ export function NavbarWithMegaMenu() {
   return (
     <Navbar className="mx-auto rounded-none px-8 lg:pr-14 lg:pl-8 py-2 sticky top-0  z-[999] bg-white" fullWidth={true} blurred={false}>
       <div className="flex items-center justify-between text-blue-gray-900">
-    
+
         <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-              <Image src={Logo} alt="" width={120}/>
+          <Image src={Logo} alt="" width={120} />
         </Typography>
         <div className="hidden lg:block">
           <NavList />
-        </div>
+        </div> 
         <div className="hidden gap-2 lg:flex">
+          <Link href="/book">
           <CustomButton Value={contact} />
+          </Link>
         </div>
         <IconButton
           variant="text"
@@ -101,7 +108,10 @@ export function NavbarWithMegaMenu() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <CustomButton Value={contact} />
+        <Link href="/book">
+
+          <CustomButton Value={contact} />
+        </Link>
       </Collapse>
     </Navbar>
   );
