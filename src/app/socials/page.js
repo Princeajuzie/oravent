@@ -73,9 +73,12 @@ export default function Page() {
       <NavbarWithMegaMenu />
 
       {/* All socials  */}
-      <div className="flex items-center justify-center bg-[#f2f2f7]">
+      <div className="flex items-center justify-center flex-col bg-[#f2f2f7] gap-10 py-10">
+        
         {loading ? 
-
+           <>
+           
+             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl w-[18rem] rounded-lg h-10 animate-pulse bg-gray-700 "></h2>
           <ul className="items-center grid gap-3 grid-cols-1  px-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 w-full ">
            
               {Array.from({length : 9}, (_,index)=>{
@@ -88,9 +91,11 @@ export default function Page() {
               })}
           
           </ul>
+           </>
         : 
+        <>
         
-        
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Socials</h2>
         <main
         className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 px-4"
         style={{
@@ -99,6 +104,7 @@ export default function Page() {
           gridAutoFlow: 'dense',
         }}
       >
+        
         {data.data &&
           data.data.map((info) => (
             <div
@@ -123,6 +129,8 @@ export default function Page() {
             </div>
           ))}
       </main>
+        </>
+        
       
         }
       </div>
