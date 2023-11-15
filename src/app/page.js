@@ -29,16 +29,11 @@ export default function Home() {
 
         <ReviewComponent />
 
-        {/* social component */}
-
-        <Social />
-
         {/* pricing component */}
         <PricingComponent />
 
         {/* contact component */}
-          <ContactComponent/>
-
+        <ContactComponent />
       </div>
 
       {/* footer component */}
