@@ -4,20 +4,17 @@ import { Typography } from "@material-tailwind/react";
 const SITEMAP = [
   {
     title: "Company",
-    links: ["About Us", "Careers", "Our Team", "Projects"],
+    links: ["About Us", "Contact", "Services", "Gallery"],
   },
   {
     title: "Help Center",
-    links: ["Discord", "Twitter", "GitHub", "Contact Us"],
+    links: ["Facebook", "Twitter", "Instagram", "Youtube"],
   },
   {
     title: "Resources",
     links: ["Blog", "Newsletter", "Free Products", "Affiliate Program"],
   },
-  {
-    title: "Products",
-    links: ["Templates", "UI Kits", "Icons", "Mockups"],
-  },
+
 ];
 
 const currentYear = new Date().getFullYear();
@@ -45,7 +42,7 @@ export function FooterWithSitemap() {
                     className="font-normal"
                   >
                     <a
-                      href="#"
+                      href=""
                       className="inline-block py-1 pr-2 transition-transform hover:scale-105"
                     >
                       {link}
