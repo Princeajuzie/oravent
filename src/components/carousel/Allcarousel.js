@@ -5,6 +5,7 @@ import Event0 from "@/assets/images/event0.jpg";
 import Event001 from "@/assets/images/event001.jpg";
 import Event003 from "@/assets/images/event003.jpg";
 import Image from "next/image";
+import Link from "next/link";
 export default function AllCarousel() {
   const Data = [
     {image : Event0, id: 1},
@@ -29,7 +30,10 @@ export default function AllCarousel() {
       </p>
 
       <div class="mt-4 sm:mt-8">
+      <Link href={"#Contact"}>
+      
       <CustomButton Value={Event} color="white" variant="gradient" className="text-black bg-white"/>
+      </Link>
       </div>
     </div>
 
