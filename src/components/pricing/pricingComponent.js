@@ -10,7 +10,7 @@ export default function PricingComponent() {
     const icon = <FaArrowRight />
     return (
       <div>
-          <div className="space-y-5 px-8 lg:px-14 py-12">
+          <div className="space-y-5 px-4 lg:px-14 py-12">
           <div className="text-center mt-4 lg:mt-8">
           <div className="text-sm text-indigo-600 uppercase font-semibold tracking-wider">
             Pricing Plans
@@ -24,7 +24,7 @@ export default function PricingComponent() {
         </div>
       <div className="demo-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div
-              className="rounded-[30px] md:rounded-[36px] bg-[#FAFAFA] overflow-hidden border-[1px] border-gray-200 p-8 relative">
+              className="rounded-[30px] md:rounded-[36px] bg-gray-100 overflow-hidden border-[1px] border-gray-200 p-8 relative">
               <div className="h-full">
                   <div className="h-full z-10 relative">
                       <div className="flex flex-col flex-1 justify-between h-full space-y-5">

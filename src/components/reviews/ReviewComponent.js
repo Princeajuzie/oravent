@@ -32,7 +32,7 @@ export default function ReviewComponent() {
       
 <section className="bg-[#f2f2f7] lg:bg-[#f2f2f7]">
 
-  <div className="mx-auto w-full max-w-7xl px-8 py-16 md:px-10 md:py-24 lg:py-32">
+  <div className="mx-auto w-full max-w-7xl px-4 py-16 md:px-10 md:py-24 lg:py-32">
 
     <h2 className="mb-8 text-center text-3xl font-bold md:mb-14 md:text-5xl">What our clients are saying</h2>
  

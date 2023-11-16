@@ -6,14 +6,14 @@ const ContactComponent = () => {
   return (
     <section className="bg-gray-100 top-10" id="Contact">
       <div className="mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl py-5 lg:py-0">Contact Us</h2>
+      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Us</h2>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
-            <p className="max-w-xl text-lg">
-              At the same time, the fact that we are wholly owned and totally
-              independent from manufacturer and other group control gives you
-              confidence that we will only recommend what is right for you.
-            </p>
+     
+                <p className="mt-4 text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+                    eros at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis elit efficitur consequat.
+                    Mauris eleifend velit a pretium iaculis. Donec sagittis velit et magna euismod, vel aliquet nulla
+                    malesuada. Nunc pharetra massa lectus, a fermentum arcu volutpat vel.</p>
 
             <div className="mt-8">
               <a href="tel: +0151 475 4450" className="text-2xl font-bold text-pink-600">

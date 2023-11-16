@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import CustomButton from '../button/CustomButton';
 
 export default function BookAppointment() {
+    const Title = " Book Appointment"
     return (
 
-            <div class="flex items-center justify-center p-12 flex-col">
-                    <h1 className='font-bold text-4xl mb-10'>Book Appointment</h1>
-                <div class="mx-auto w-full max-w-[550px] bg-white p-10 rounded-[10px] shadow-lg">
+            <div class="flex items-center justify-center py-7 px-4 lg:p-12 flex-col">
+                    <h1 className='font-bold text-3xl lg:text-4xl mb-7 lg:mb-10'>Book Appointment</h1>
+                <div class="mx-auto w-full max-w-[550px] bg-white px-4 py-5 lg:p-10 rounded-[10px] shadow-lg">
                     <form>
                         <div class="mb-5">
                             <label for="name" class="mb-3 block text-base font-medium text-[#07074D]">
@@ -82,10 +84,11 @@ export default function BookAppointment() {
                         </div>
 
                         <div>
-                            <button
+                            <CustomButton  Value={Title} className="py-3 px-8 w-full "/>
+                            {/* <button
                                 class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
                                 Book Appointment
-                            </button>
+                            </button> */}
                         </div>
                     </form>
                 </div>
