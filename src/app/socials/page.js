@@ -21,6 +21,7 @@ const VideoPlayer = ({ mediaUrl }) => {
     setIsPlaying(!isPlaying);
   };
 
+  
 
 
   return (
@@ -31,13 +32,13 @@ const VideoPlayer = ({ mediaUrl }) => {
         height="100%"
         loop
         playsInline
-        className="object-cover"
+        className="object-cover rounded-t-lg"
         controls={false}
    
       >
         <source src={mediaUrl} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center ">
         {/* Add custom controls here */}
         {isPlaying ? (
           <FaPause onClick={togglePlay} className="text-white/50 hover:text-white/70 text-[60px] cursor-pointer" />
@@ -67,6 +68,12 @@ export default function Page() {
     getStaticProp();
   }, []);
 
+
+  useEffect(() => {
+    // Log media_type for each item
+    data.data && data.data.forEach((item) => console.log(item.media_type));
+  }, [data]);
+
   return (
     <div>
       {/* navbar  */}
@@ -95,9 +102,9 @@ export default function Page() {
         : 
         <>
         
-        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Socials</h2>
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-[cursive]">Instagram Feeds</h2>
         <main
-        className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 px-4"
+        className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 px-8"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, fit-content)',
@@ -112,11 +119,11 @@ export default function Page() {
               className="relative flex lg:max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
             >
               <div className="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
-                {info.media_type === "IMAGE" ? (
-                  <img src={info.media_url} alt="ui/ux review check" className="w-full h-full object-cover" />
-                ) : (
-                  <VideoPlayer mediaUrl={info.media_url} />
-                )}
+                {info.media_type === "IMAGE" || info.media_type === "CAROUSEL_ALBUM"  ? (
+                  <img src={info.media_url} alt="ui/ux review check" className="w-full h-full object-cover rounded-t-lg" />
+                ) : 
+                  <VideoPlayer mediaUrl={info.media_url} /> 
+                }
               </div>
               <div className="p-6">
                 <p className="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
