@@ -15,7 +15,7 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 export default function GalleryComponent() {
   const pathname = usePathname();
-  const [sizes, setSizes] = useState(window.innerWidth > 959);
+  const [sizes, setSizes] = useState( typeof window !== 'undefined' ? window.innerWidth > 959 : false);
   useEffect(() => {
     const handleResize = () => {
         if(typeof window !== "undefined"){
