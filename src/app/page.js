@@ -7,7 +7,6 @@ import GalleryComponent from "@/components/gallery/galleryComponent";
 import AboutComponent from "@/components/about/AboutComponent";
 import ReviewComponent from "@/components/reviews/ReviewComponent";
 import ContactComponent from "@/components/contact/ContactComponent";
-import Social from "./socials/page";
 
 export default function Home() {
   return (

@@ -86,7 +86,7 @@ export default function Page() {
            <>
            
              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl w-[18rem] rounded-lg h-10 animate-pulse bg-gray-700 "></h2>
-          <ul className="items-center grid gap-3 grid-cols-1  px-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-14 w-full ">
+          <ul className="items-center grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 px-4 w-full ">
            
               {Array.from({length : 9}, (_,index)=>{
                 return(
@@ -104,7 +104,7 @@ export default function Page() {
         
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-[cursive]">Instagram Feeds</h2>
         <main
-        className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 px-8"
+        className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 px-4"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(3, fit-content)',
