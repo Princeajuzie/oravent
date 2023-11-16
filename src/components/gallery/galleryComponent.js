@@ -18,20 +18,29 @@ export default function GalleryComponent() {
   const [sizes, setSizes] = useState(window.innerWidth > 959);
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 959) {
-        setSizes(true);
-      } else {
-        setSizes(false);
-      }
+        if(typeof window !== "undefined"){
+
+            if (window.innerWidth > 959) {
+              setSizes(true);
+            } else {
+              setSizes(false);
+            }
+        }
     };
 
     handleResize()
+    
+    if(typeof window !== "undefined"){
 
-    window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
+    }
 
    return  ()=>{
+    if(typeof window !== "undefined"){
+
+        window.removeEventListener('resize',handleResize)
+    }
     
-    window.removeEventListener('resize',handleResize)
     }
   }, []);
 
