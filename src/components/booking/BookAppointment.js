@@ -7,14 +7,14 @@ import toast, { Toaster } from "react-hot-toast";
 import ReactiveButton from "reactive-button";
 
 export default function BookAppointment() {
-
-  const [loads, setLoads] = useState(true);
   const [state, setState] = useState("idle");
 
   const form = useRef(null);
-  const loading = () => toast.loading("loading..");
-  const HandleSubmit = async (e) => {
-    e.preventDefault();
+
+  const handleSubmit = async (e) => {
+    if (e) {
+        e.preventDefault();
+      }
 
     setState("loading");
     await emailjs
@@ -28,27 +28,26 @@ export default function BookAppointment() {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
-          setTimeout(() => {
+        setTimeout(()=>{
+
             setState("success");
-          }, 2000);
-          //   toast.dismiss(loading)
-          toast.success("Appointment booked sucessfully");
+            toast.success("Appointment booked sucessfully");
+        },2000)
         },
         function (error) {
           // toast.dismiss(loading)
           console.log("FAILED...", error);
-          toast.error(`an error occured ${error}`);
+          setState('error', error)
+          toast.error(`an error occured `);
         }
       );
   };
 
   return (
     <div class="flex items-center justify-center py-7 px-4 lg:p-12 flex-col">
-      <h1 className="font-bold text-3xl lg:text-4xl mb-7 lg:mb-10">
-        Book Appointment
-      </h1>
+      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-[cursive] mb-7">Event Appointment</h2>
       <div class="mx-auto w-full max-w-[550px] bg-white px-4 py-5 lg:p-10 rounded-[10px] shadow-lg">
-        <form ref={form} onSubmit={HandleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <div class="mb-5">
             <label
               for="name"
@@ -69,7 +68,7 @@ export default function BookAppointment() {
               for="phone"
               class="mb-3 block text-base font-medium text-[#07074D]"
             >
-              Phone Number
+              Whatsapp Number
             </label>
             <input
               type="number"
@@ -147,23 +146,23 @@ export default function BookAppointment() {
                 />
                 Online
               </label>
-              <label htmlFor="offline">
+              <label htmlFor="physical">
                 <input
                   type="radio"
-                  id="offline"
+                  id="physical"
                   name="appointment"
-                  value="offline"
+                  value="physical"
                   className="mr-2"
                   // Add logic here to handle the state of the radio button
                 />
-                Offline
+                physical
               </label>
             </div>
           </div>
 
           <div class="mb-5 pt-3">
             <label class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
-              Address Details
+              Event Details
             </label>
             <div class="-mx-3 flex flex-wrap">
               <div class="w-full px-3 sm:w-1/2">
@@ -172,7 +171,7 @@ export default function BookAppointment() {
                     type="text"
                     name="area"
                     id="area"
-                    placeholder="Enter area"
+                    placeholder="Event area"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                   />
                 </div>
@@ -184,7 +183,7 @@ export default function BookAppointment() {
                     name="city"
                     id="city"
                     required
-                    placeholder="Enter city"
+                    placeholder="Event city"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                   />
                 </div>
@@ -196,7 +195,7 @@ export default function BookAppointment() {
                     name="state"
                     id="state"
                     required
-                    placeholder="Enter state"
+                    placeholder="Event state"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                   />
                 </div>
@@ -208,7 +207,7 @@ export default function BookAppointment() {
                     name="country"
                     id="country"
                     required
-                    placeholder="country"
+                    placeholder="Event country"
                     class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                   />
                 </div>
@@ -239,9 +238,9 @@ export default function BookAppointment() {
               rounded={20}
               
               idleText="Book Appointment"
-              loadingText="Booking"
+              loadingText="Booking..."
               successText="Done"
-              onClick={HandleSubmit}
+              onClick={handleSubmit}
             />
             <Toaster />
           </div>

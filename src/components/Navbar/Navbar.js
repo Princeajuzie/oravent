@@ -64,7 +64,7 @@ export function NavbarWithMegaMenu() {
     route.push('/book')
   }
   const [openNav, setOpenNav] = useState(false);
-  const contact = "Book Appointment";
+  const contact = "Event Appointment";
   useEffect(() => {
     // media query
     window.addEventListener(
