@@ -34,7 +34,7 @@ export default function ReviewComponent() {
 
   <div className="mx-auto w-full max-w-7xl px-4 py-16 md:px-10 md:py-24 lg:py-32">
 
-    <h2 className="mb-8 text-center text-3xl font-bold md:mb-14 md:text-5xl">What our clients are saying</h2>
+    <h2 className="mb-8 text-left lg:text-center text-3xl font-bold md:mb-14 md:text-5xl">What our clients are saying</h2>
  
     <ul className="mb-6 grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:mb-16">
       {/* <li className="grid gap-8 border border-solid border-[#dfdfdf] bg-white p-8 md:p-10">
