@@ -11,46 +11,48 @@ export default function BookAppointment() {
 
   const form = useRef(null);
 
-  const handleSubmit = async (e) => {
-    if (e) {
-        e.preventDefault();
-      }
+  const handleSubmit =  async (e) => {
+    // if (e) {
+    // }
+    e?.preventDefault();
+
+    console.log("Form submitted")
 
     setState("loading");
-    await emailjs
+ emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICEID,
         process.env.NEXT_PUBLIC_TEMPLATEID,
         form.current,
         process.env.NEXT_PUBLIC_PUBLICKEY
-      )
-
-      .then(
+      ).then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
-        setTimeout(()=>{
-
+          setTimeout(() => {
             setState("success");
             toast.success("Appointment booked sucessfully");
-        },2000)
+          }, 2000);
         },
         function (error) {
           // toast.dismiss(loading)
           console.log("FAILED...", error);
-          setState('error', error)
+          setState("error", error);
           toast.error(`an error occured `);
         }
       );
+    
   };
 
   return (
     <div class="flex items-center justify-center py-7 px-4 lg:p-12 flex-col">
-      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-[cursive] mb-7">Event Appointment</h2>
+      <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl font-[cursive] mb-7">
+        Event Appointment
+      </h2>
       <div class="mx-auto w-full max-w-[550px] bg-white px-4 py-5 lg:p-10 rounded-[10px] shadow-lg">
         <form ref={form} onSubmit={handleSubmit}>
           <div class="mb-5">
             <label
-              for="name"
+              htmlFor="name"
               class="mb-3 block text-base font-medium text-[#07074D]"
             >
               Full Name
@@ -65,7 +67,7 @@ export default function BookAppointment() {
           </div>
           <div class="mb-5">
             <label
-              for="phone"
+              htmlFor="phone"
               class="mb-3 block text-base font-medium text-[#07074D]"
             >
               Whatsapp Number
@@ -80,7 +82,7 @@ export default function BookAppointment() {
           </div>
           <div class="mb-5">
             <label
-              for="email"
+              htmlFor="email"
               class="mb-3 block text-base font-medium text-[#07074D]"
             >
               Email Address
@@ -97,7 +99,7 @@ export default function BookAppointment() {
             <div class="w-full px-3 sm:w-1/2">
               <div class="mb-5">
                 <label
-                  for="date"
+                  htmlFor="date"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Date
@@ -114,7 +116,7 @@ export default function BookAppointment() {
             <div class="w-full px-3 sm:w-1/2">
               <div class="mb-5">
                 <label
-                  for="time"
+                  htmlFor="time"
                   class="mb-3 block text-base font-medium text-[#07074D]"
                 >
                   Time
@@ -228,15 +230,12 @@ export default function BookAppointment() {
             ></textarea>
           </div>
           <div>
-        
-
             <ReactiveButton
               buttonState={state}
-               height="40px"
+              height="40px"
               width="100%"
-                style={{backgroundColor : "#212121"}}
+              style={{ backgroundColor: "#212121" }}
               rounded={20}
-              
               idleText="Book Appointment"
               loadingText="Booking..."
               successText="Done"
