@@ -32,7 +32,7 @@ export default function Home() {
         <PricingComponent />
 
         {/* contact component */}
-          <ContactComponent/>
+        <ContactComponent />
       </div>
 
       {/* footer component */}

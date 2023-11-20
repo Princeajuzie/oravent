@@ -16,8 +16,8 @@ export default function AllCarousel() {
   return (
     <div className=" relative scroll-smooth" style={{ height: "calc(100vh - 9.625vh)" }}>
       <div className="absolute z-30 top-0 bg-black/40 h-[inherit] w-full text-[white]  flex items-center px-10 lg:pl-12">
-      <div class="text-left ltr:sm:text-left rtl:sm:text-right gap-8 w-fit ">
-      <h2 class="text-2xl font-bold text-white sm:text-4xl md:text-5xl">
+      <div class="text-left ltr:sm:text-left rtl:sm:text-right gap- w-fit flex flex-col ">
+      <h2 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl ">
         Best Events Experience
       </h2>
 
