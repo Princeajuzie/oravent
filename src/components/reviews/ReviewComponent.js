@@ -5,7 +5,7 @@ export default function ReviewComponent() {
     const ReviewsInfo = [
         {
            
-            tittle: "“Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis“",
+            tittle: "“Spectacular! Oravent transformed my wedding venue into a dreamy wonderland. Every detail was perfection, leaving our guests in awe. Thank you for making our day truly magical!“",
       
             img : "https://st5.depositphotos.com/62604338/62457/i/600/depositphotos_624574132-stock-photo-young-black-man-standing-wearing.jpg",
             name: "Laila Bahar",
@@ -13,7 +13,7 @@ export default function ReviewComponent() {
         },
         {
            
-            tittle: "“Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis“",
+            tittle: "“Exceptional service! You guys went above and beyond, exceeding our expectations. Their artistic touch and meticulous planning made our event a huge success. Professionalism at its best!“",
     
             img : "https://st3.depositphotos.com/12071432/17791/i/450/depositphotos_177916990-stock-photo-woman.jpg",
             name: "Favour Jude",
@@ -21,7 +21,7 @@ export default function ReviewComponent() {
         },
         {
            
-            tittle: "“ Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis“",
+            tittle: "“Artistic brilliance! Oravent elevated our corporate event with stunning decorations that perfectly aligned with our brand. Impeccable attention to detail left a lasting impression on clients. Highly recommended!“",
             img : "https://st5.depositphotos.com/6230312/62640/i/600/depositphotos_626401998-stock-photo-man-leadership-businessman-front-office.jpg",
             name: "Felix Mark",
             work : "CEO @elien"

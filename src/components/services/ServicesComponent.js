@@ -14,12 +14,12 @@ export default function ServicesComponent() {
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-            Wedding Parties
+            Wedding Planning
           </h3>
           <p class="sm:text-lg mt-6">
-            Use the LocaleData gem to download translations directly into your Ruby on Rails
-            projects using the provided command line interface. Just create a project and follow
-            the step-by-step instructions.
+          Elevate your wedding dreams to reality with our meticulous planning services. 
+          From venue selection to decor details, 
+          we weave your love story into every element, ensuring your special day is nothing short of magical.
           </p>
         </div>
       </div>
@@ -33,10 +33,9 @@ export default function ServicesComponent() {
             Birthday Parties
           </h3>
           <p class="sm:text-lg mt-6">
-            All LocaleData projects are private. Each project can have multiple collaborators
-            with different roles and access permissions. You determine who can see and edit
-            your translations. Just add admins, developers, translators and configure their
-            access rights.
+          Celebrate milestones with a burst of joy! Our birthday party expertise brings creative themes,
+          vibrant decor, and seamless coordination to make your special day unforgettable. 
+          Let&#39;s create memories that last a lifetime.
           </p>
         </div>
       </div>
@@ -47,13 +46,12 @@ export default function ServicesComponent() {
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-          Anniverssaries
+          Anniversary Celebrations
           </h3>
           <p class="sm:text-lg mt-6">
-            LocaleData provides you easy import/export functions for your YAML files.
-            Use a simple editor with many predefined languages to manage your locales.
-            LocaleData also supports multiple translation types, such as simple text, plural forms,
-            numbers, booleans, symbols, arrays, ...
+          Toast to enduring love with our anniversary celebration expertise. 
+          Whether it&#39;s an intimate gathering or a grand affair, 
+          we curate experiences that reflect your journey. Mark the milestones with elegance and style.
           </p>
         </div>
       </div>
@@ -67,8 +65,10 @@ export default function ServicesComponent() {
           Surprise Party
           </h3>
           <p class="sm:text-lg mt-6">
-            Do you need to change the path of many translation keys at once? No problem, just
-            use the bulk editing feature and enjoy the results.
+          Ignite the joy of surprise! Our expert team specializes in crafting unforgettable moments for 
+          surprise parties. From covert planning to the big reveal, we add an extra layer of excitement to 
+          your celebrations. 
+          Get ready for gasps of joy and memories that will be talked about for years to come
           </p>
         </div>
       </div>

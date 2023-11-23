@@ -15,13 +15,13 @@ export default function PricingComponent() {
           </h2>
         </div>
         <div className="demo-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div className="rounded-[30px] md:rounded-[36px] bg-gray-100 overflow-hidden border-[1px] border-gray-200 p-8 relative">
+          <div className="rounded-[30px] md:rounded-[26px] bg-gray-100 overflow-hidden border-[1px] border-gray-200 p-8 relative">
             <div className="h-full">
               <div className="h-full z-10 relative">
                 <div className="flex flex-col flex-1 jusptify-between h-full space-y-5">
                   <div className="flex justify-between flex-col">
                     <div className="text-xl md:text-2xl font-bold text-gray-900 flex justify-between">
-                      <span>Starter</span>
+                      <span>Weddings</span>
                     </div>
                     <div className="pt-5 text-gray-500 font-medium text-base space-y-1">
                       <div className="flex items-center align-bottom">

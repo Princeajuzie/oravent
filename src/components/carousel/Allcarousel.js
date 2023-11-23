@@ -1,9 +1,9 @@
 "use client";
 import { Carousel } from "@material-tailwind/react";
 import CustomButton from "../button/CustomButton";
-import Event0 from "@/assets/images/event0.jpg";
-import Event001 from "@/assets/images/event001.jpg";
-import Event003 from "@/assets/images/event003.jpg";
+import Event0 from "@/assets/images/zzeal27.jpg";
+import Event001 from "@/assets/images/zeals2-47.jpg";
+import Event003 from "@/assets/images/zeals2-338.jpg";
 import Image from "next/image";
 import Link from "next/link";
 export default function AllCarousel() {
@@ -24,9 +24,8 @@ export default function AllCarousel() {
       <p
         class=" max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
       >
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-        officia corporis quasi doloribus iure architecto quae voluptatum beatae
-        excepturi dolores.
+        Transforming Dreams into Breathtaking Realities... <br /> Elevate your events with our exquisite interior and exterior decorations. 
+        Your vision, our expertise... Unleash the magic of unforgettable moments!.
       </p>
 
       <div class="mt-4 sm:mt-8">
