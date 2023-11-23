@@ -4,9 +4,6 @@ import CustomButton from "../button/CustomButton";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import LightGallery from "lightgallery/react";
-import Event0 from "@/assets/images/zzeal27.jpg";
-import Event001 from "@/assets/images/zeals2-47.jpg";
-import Event003 from "@/assets/images/zeals2-338.jpg";
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
@@ -121,7 +118,7 @@ export default function GalleryComponent() {
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
               >
                 <img
-                  src="https://img.freepik.com/premium-photo/luxury-decorated-with-flowers-festive-banquet-hall-restaurant-pink_199620-2911.jpg?w=900"
+                  src="/zeals69.jpg"
                   loading="lazy"
                   alt="Photo by Minh Pham"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -139,7 +136,7 @@ export default function GalleryComponent() {
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80 object-cover"
               >
                 <img
-                  src="https://img.freepik.com/free-photo/luxurious-dinner-hall-with-large-crystal-chandelier_8353-565.jpg?w=900&t=st=1700024134~exp=1700024734~hmac=440be96fdd63eb9dbd4395aa78a1abf43992e9e2fb09006b8d7a542358ceb35f"
+                  src="/zeals2-47.jpg"
                   loading="lazy"
                   alt="Photo by Magicle"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -157,7 +154,7 @@ export default function GalleryComponent() {
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
               >
                 <img
-                  src="https://img.freepik.com/premium-photo/decor-wedding-banquet-hall-wedding-venue-decorations_67394-2442.jpg?w=900"
+                  src="/zzeal27.jpg"
                   loading="lazy"
                   alt="Photo by Martin Sanchez"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -175,7 +172,7 @@ export default function GalleryComponent() {
                 className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
               >
                 <img
-                  src="https://img.freepik.com/premium-photo/beautiful-table-set-some-festive-event-party-wedding-reception_118454-2708.jpg?w=900"
+                  src="zzeal16.jpg"
                   loading="lazy"
                   alt="Photo by Lorenzo Herrera"
                   className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"

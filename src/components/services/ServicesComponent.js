@@ -10,7 +10,7 @@ export default function ServicesComponent() {
 
       <div class="flex flex-wrap items-center justify-center mt-10 text-center shadow-me py-10 rounded-xl">
         <div class="w-full md:w-3/5 lg:w-fit px-4 lg:px-4">
-          <img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="gem" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]"  />
+          <img src="/zeals-428.jpg" alt="gem" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]"  />
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
@@ -26,7 +26,7 @@ export default function ServicesComponent() {
 
       <div class="flex flex-wrap items-center mt-10 justify-center text-center shadow-me py-10 rounded-xl">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-          <img src="https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="project members" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
+          <img src="/zzeal27.jpg" alt="Birthday Parties" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
@@ -42,7 +42,7 @@ export default function ServicesComponent() {
 
       <div class="flex flex-wrap items-center mt-10 justify-center text-center shadow-me py-10 rounded-xl">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-          <img src="https://img.freepik.com/free-photo/wonderful-wedding-ceremony-place-near-sea-decorated-by-flowers_8353-9869.jpg?w=900&t=st=1700156115~exp=1700156715~hmac=81126afd03096bb9dce7730734a24329061f2cc24d0de5f6a1feda71c4a1ce9f" alt="editor" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
+          <img src="/zeals3.jpg" alt="Anniversary" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
@@ -58,7 +58,7 @@ export default function ServicesComponent() {
 
       <div class="flex flex-wrap items-center mt-10 justify-center text-center shadow-me py-10 rounded-xl">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-          <img src="https://picsum.photos/400/240" alt="bulk editing" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
+          <img src="/zeals4.jpg" alt="Surprise parties" class="inline-block rounded-xl shadow-lg border border-merino-400 object-cover lg:w-[40vw]" />
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
           <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">

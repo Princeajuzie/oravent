@@ -1,16 +1,18 @@
 "use client";
 import { Carousel } from "@material-tailwind/react";
 import CustomButton from "../button/CustomButton";
-import Event0 from "@/assets/images/zzeal27.jpg";
+import Event0 from "@/assets/images/zeals2-338.jpg";
 import Event001 from "@/assets/images/zeals2-47.jpg";
-import Event003 from "@/assets/images/zeals2-338.jpg";
+import Event003 from "@/assets/images/zzeal27.jpg";
+import Event004 from "@/assets/images/zeals69.jpg";
 import Image from "next/image";
 import Link from "next/link";
 export default function AllCarousel() {
   const Data = [
     {image : Event0, id: 1},
     {image : Event001, id: 2},
-    {image : Event003, id: 3}
+    {image : Event003, id: 3},
+    {image : Event004, id: 4}
   ]
   const Event = "Contact Us"
   return (
