@@ -1,11 +1,15 @@
+"use client";
 import CustomButton from "../button/CustomButton";
 import { FaArrowRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function PricingComponent() {
-  const starter = "choose starter";
-  const Startup = `choose startups`;
-  const Enterprise = "Enterprise";
+ 
   const icon = <FaArrowRight />;
+  const router = useRouter();
+  const book = () => {
+    router.push("/book");
+  };
   return (
     <div>
       <div className="space-y-5 px-4 lg:px-14 py-12">
@@ -121,6 +125,7 @@ export default function PricingComponent() {
                     <CustomButton
                       Value={"Contact Us"}
                       icon={icon}
+                      onClick={book}
                       className="flex items-center gap-2 px-5 py-3 rounded-md hover:shadow-2xl transition-all duration-300 hover:scale-105 appearance-none  font-semibold text-base normal-case"
                     />
                   </div>
@@ -189,7 +194,7 @@ export default function PricingComponent() {
                 <div className="flex flex-col flex-1 jusptify-between h-full space-y-5">
                   <div className="flex justify-between flex-col">
                     <div className="text-xl md:text-2xl font-bold text-gray-900 flex justify-between">
-                      <span>Weddings</span>
+                      <span>Parties</span>
                     </div>
                     <div className="pt-5 text-gray-500 font-medium text-base space-y-1">
 
@@ -288,6 +293,7 @@ export default function PricingComponent() {
                     <CustomButton
                       Value={"Contact Us"}
                       icon={icon}
+                      onClick={book}
                       className="flex items-center gap-2 px-5 py-3 rounded-md hover:shadow-2xl transition-all duration-300 hover:scale-105 appearance-none  font-semibold text-base normal-case"
                     />
                   </div>
@@ -356,7 +362,7 @@ export default function PricingComponent() {
                 <div className="flex flex-col flex-1 jusptify-between h-full space-y-5">
                   <div className="flex justify-between flex-col">
                     <div className="text-xl md:text-2xl font-bold text-gray-900 flex justify-between">
-                      <span>Weddings</span>
+                      <span>Other Events</span>
                     </div>
                     <div className="pt-5 text-gray-500 font-medium text-base space-y-1">
 
@@ -455,6 +461,7 @@ export default function PricingComponent() {
                     <CustomButton
                       Value={"Contact Us"}
                       icon={icon}
+                      onClick={book}
                       className="flex items-center gap-2 px-5 py-3 rounded-md hover:shadow-2xl transition-all duration-300 hover:scale-105 appearance-none  font-semibold text-base normal-case"
                     />
                   </div>

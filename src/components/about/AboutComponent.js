@@ -67,7 +67,7 @@ export default function AboutComponent() {
               </div>
               <div className="mt-12 md:mt-0">
                 <img
-                  src="https://c1.wallpaperflare.com/preview/804/45/210/dinner-party-wedding-meal-party.jpg"
+                  src="/zeals-9.jpg"
                   alt="About Us Image"
                   className="object-cover rounded-lg shadow-md"
                 />

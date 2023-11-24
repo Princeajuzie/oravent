@@ -54,22 +54,22 @@ export default function GalleryComponent() {
     },
     {
       id: 3,
-      category: "Dev",
+      category: "Exquisite",
       imageUrl: "/zzeal27.jpg",
     },
     {
       id: 4,
-      category: "Retro",
+      category: "Fabulous",
       imageUrl: "/zzeal16.jpg",
     },
     {
       id: 5,
-      category: "Retro",
+      category: "Unique",
       imageUrl: "/zeals103.jpg",
     },
     {
       id: 6,
-      category: "Retro",
+      category: "Perfect",
       imageUrl: "/zeals2-49.jpg",
     },
   ];
@@ -126,9 +126,6 @@ export default function GalleryComponent() {
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Party
-                </span>
               </a>
 
               <a
@@ -143,10 +140,6 @@ export default function GalleryComponent() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Wedding
-                </span>
               </a>
 
               <a
@@ -161,10 +154,6 @@ export default function GalleryComponent() {
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
-
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Dev
-                </span>
               </a>
 
               <a
@@ -180,9 +169,7 @@ export default function GalleryComponent() {
 
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-                <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
-                  Retro
-                </span>
+
               </a>
             </div>
           ) : (

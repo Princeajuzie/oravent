@@ -40,7 +40,7 @@ const ContactComponent = () => {
           <div className="rounded-lg bg-white p-5 shadow-lg lg:col-span-3 lg:p-10 lg:w-[50vw] flex flex-col ">
             <div className=" gap-5 text-blue-gray-900 justify-center grid grid-cols-2 ">
               
-              <Link href="facebook.com/oramalu.chuks">
+              <Link href="https://www.facebook.com/oramalu.chuks">
                 <Typography className="opacity-80 transition-opacity hover:opacity-100 flex items-center gap-5 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -56,10 +56,10 @@ const ContactComponent = () => {
                 </Typography>
               </Link>
 
-              <Link href="www.instagram.com/oraventss">
+              <Link href="https://www.instagram.com/oraventss">
                 <Typography
                   as="a"
-                  href=""
+                  
                   className="opacity-80 transition-opacity hover:opacity-100 flex items-center gap-5"
                 >
                   <svg
@@ -119,7 +119,7 @@ const ContactComponent = () => {
                   className="opacity-80 transition-opacity hover:opacity-100 flex items-center gap-5"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://www.w3.org/2000/svg"
                     x="0px"
                     y="0px"
                     width="30"
@@ -132,7 +132,7 @@ const ContactComponent = () => {
                 </Typography>
               </Link>
               
-              <Link href="oravents@gmail.com">
+              <Link href="https://www.oravents@gmail.com">
               <Typography
                 as="a"
                 
