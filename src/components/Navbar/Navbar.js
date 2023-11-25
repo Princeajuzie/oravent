@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Logo from "@/assets/svg/Logo.svg";
+import Logo from "@/assets/svg/Logo.png";
 import Image from "next/image";
 
 import {
@@ -86,7 +86,7 @@ export function NavbarWithMegaMenu() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
-          <Image src={Logo} alt="" width={120} />
+          <Image src={Logo} alt="" width={100}   />
         </Typography>
         <div className="hidden lg:block">
           <NavList />
